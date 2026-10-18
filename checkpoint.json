@@ -1,12 +1,12 @@
 {
-  "checkpoint": "core-v25/native-v42",
-  "parent_checkpoint": "core-v24/native-v41",
-  "game_source_commit": "6090ad8",
+  "checkpoint": "core-v26/native-v43",
+  "parent_checkpoint": "core-v25/native-v42",
+  "game_source_commit": "aced298",
   "frontend_changed": false,
   "native_inputs": 328,
-  "package_sha256": "adfb9aeb376d76ab11ef4ebc649c7ecf90cdc514e511e6400cefa66c44a9efa1",
-  "archive_sha256": "5da55eb09aa15c6a80dcf2dd096540003bf07d7b4ba10d9a71a087b5b1e020f4",
-  "archive_bytes": 186830256,
+  "package_sha256": "d66d4131659e924b857eb54644ae3f32880894c80d4592c983b386a894236e60",
+  "archive_sha256": "a5d8d24783ee1e58f2b68a3d2451fb8de20b842cf84775e4a152cec0e49ba533",
+  "archive_bytes": 186838102,
   "layer_files": 13,
   "changed_paths": [
     "assets/combat/runtime.json"
