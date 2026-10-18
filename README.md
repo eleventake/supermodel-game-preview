@@ -1,5 +1,5 @@
-# Super Model preview — core v23 / native v40
+# Super Model preview — core v24 / native v41
 
-Frozen layer on the accepted v22 image. Scoped Sami neck proportion repair; identity, outfit, rig, animation, gameplay, UI and saves preserved. 417 exact parent files remain available; the new runtime pointer selects v40. Native v38/v39/v40 Brotli paths stay supported.
+Frozen layer on the accepted v23 image. Native-only anatomy pass, built on Windows: Sami's off-hand guard and victory within natural elbow range, wrist twist carried by the forearm, head turn within cervical range, arms lifted off the torso, Claudia's lifted recovery step, and a blocked cut that meets the held blade. Frontend, gameplay, UI and saves are byte-identical to v23. Every parent file remains; the new runtime pointer selects v41. Native v38–v41 Brotli paths stay supported.
 
-Source/image build is separate from release acceptance. Whole art, exact grip geometry, listening and physical-device acceptance remain open. No GitHub Actions or auto deploy.
+Source/image build is separate from release acceptance. Whole art, a re-authored blocked cut, listening and physical-device acceptance remain open. No GitHub Actions or auto deploy.
