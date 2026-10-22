@@ -1,28 +1,15 @@
 {
-  "checkpoint": "core-v30/native-v46",
-  "parent_checkpoint": "core-v29/native-v44",
-  "game_source_commit": "80b91c2",
+  "checkpoint": "core-v31/native-v46",
+  "parent_checkpoint": "core-v30/native-v46",
+  "game_source_commit": "eeacd93",
   "frontend_changed": true,
-  "native_changed": true,
-  "layers": [
-    {
-      "name": "native",
-      "package_sha256": "dbf72ccfd41a212502634fb00a9f6986d355cde12c2434ddc4edc00d23b260c4",
-      "archive_sha256": "92c43f7ac8e8d5eb2a6a66d9bc61c54f6bced9e34ac9297fa29034c5dbf36f66",
-      "archive_bytes": 187254338,
-      "files": 13
-    },
-    {
-      "name": "frontend",
-      "package_sha256": "da054bfe335d543cd9d98ee5a168e171d5e38c071542c7a8f3eca44fde06d38d",
-      "archive_sha256": "c1447bcbfd4d6ff1aa1f8b9053a6141da9c6842b19b74cc571567edd08ceb839",
-      "archive_bytes": 43853,
-      "files": 4
-    }
-  ],
+  "native_changed": false,
+  "package_sha256": "e94517347610430d46e6002acbe1e5b9768188ec27f66d1228adf49aebe76360",
+  "archive_sha256": "e917e01a567895c8365a4408a6d98225288a17ee369eedcf8872c126b7c349bc",
+  "archive_bytes": 9944973,
+  "layer_files": 12,
   "changed_paths": [
-    "assets/combat/runtime.json",
-    "combat/index.html"
+    "index.html"
   ],
   "source_build_is_release_acceptance": false,
   "whole_game_complete": false
