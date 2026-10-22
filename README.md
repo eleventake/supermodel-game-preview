@@ -1,5 +1,9 @@
-# Super Model preview — core v35 / native v47
+# Super Model website with the game under /play/
 
-Native and frontend layers on the accepted v34 image. Native v47 keeps the sword hand of Sami and the copy inside its natural twist range (the forearm carries the turn; blade, contact and parry are unchanged). The metal contact sound gains an MP3 copy of the same CC0 clip for Safari builds without Ogg.
+Image for the `supermodel-web-staging` OVH target. It starts from the website image already
+served there (`local/supermodel-web:bootstrap-33b06ce`, unchanged) and adds the accepted
+core-v35/native-v47 game under `/play/`: the served v35 preview tree with only the current
+native build, plus a small layer whose HTML and bundles are built for the `/play/` base.
+A secondary "Play" button is added before "Get $SM" in the site header.
 
 Source/image build is separate from release acceptance. No GitHub Actions or auto deploy.

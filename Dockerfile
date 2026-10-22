@@ -1,8 +1,20 @@
-# Accepted v34 image; exact ID and parent layer prefix are independently verified.
-FROM local/super-model-preview:core-v34-evening-native-v46-20261023
+# Super Model website as served on supermodel-web-staging (bootstrap 33b06ce, unchanged)
+# with the accepted core-v35/native-v47 game under /play/ and a Play link in the header.
+FROM local/super-model-preview:core-v35-native-v47-20261023 AS game
+
+FROM local/supermodel-web:bootstrap-33b06ce
 USER root
-RUN wget -q -O /tmp/native-layer.zip https://github.com/eleventake/supermodel-game-preview/releases/download/core-v35-stable-native-v47/core-v35-native-v47-layer.zip     && echo "a135d21232c36cc65a0f14e5f38ca931078dfa2dae96da8334ad65b8a27dc48f  /tmp/native-layer.zip" | sha256sum -c -     && unzip -qo /tmp/native-layer.zip -d /usr/share/nginx/html     && rm /tmp/native-layer.zip
-RUN wget -q -O /tmp/frontend-layer.zip https://github.com/eleventake/supermodel-game-preview/releases/download/core-v35-stable-native-v47/core-v35-native-v47-frontend-layer.zip     && echo "e62ff9732652ba2e262008385eadf0926791ad4b35e314c04e5a9a67c67608b6  /tmp/frontend-layer.zip" | sha256sum -c -     && unzip -qo /tmp/frontend-layer.zip -d /usr/share/nginx/html     && rm /tmp/frontend-layer.zip
+COPY --from=game /usr/share/nginx/html /usr/share/nginx/html/play
+# Only the current native build is needed on the site; older client builds stay on the preview.
+RUN cd /usr/share/nginx/html/play \
+    && find assets/combat/Build -type f -name 'combat-build-v*' ! -name 'combat-build-v47.*' -delete \
+    && wget -q -O /tmp/web-play-layer.zip https://github.com/eleventake/supermodel-game-preview/releases/download/core-v35-stable-native-v47/core-v35-native-v47-web-play-layer.zip \
+    && echo "12297db703c5b1767c52c716479f1a4eaeb894d3aa2e1d889e8a6b1930c8b02a  /tmp/web-play-layer.zip" | sha256sum -c - \
+    && unzip -qo /tmp/web-play-layer.zip -d /usr/share/nginx/html/play \
+    && rm /tmp/web-play-layer.zip \
+    && grep -q '/play/assets/story-' index.html && grep -q '/play/assets/combat-' combat/index.html
+COPY site-play-link.sh /tmp/site-play-link.sh
+RUN sh /tmp/site-play-link.sh /usr/share/nginx/html/index.html && rm /tmp/site-play-link.sh
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 USER 101
 EXPOSE 8080
