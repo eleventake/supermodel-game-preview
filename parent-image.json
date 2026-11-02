@@ -1,5 +1,5 @@
 {
-  "tag": "local/super-model-preview:core-v37-story-native-v48-20261030",
-  "image": "sha256:90e8042e4464f45ee94d958a90a16a6cd8e9ea30c73c93d87e539bf3e4e03c7c",
+  "tag": "local/super-model-preview:core-v38-party-native-v48-20261102",
+  "image": "sha256:87cd3d6d67aac872eeaa2f32795559be227e3a1f7f31ea011d40e475e64585a4",
   "note": "Layer prefix is re-read from the image on OVH before build."
 }
