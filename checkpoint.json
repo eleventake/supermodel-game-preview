@@ -1,22 +1,23 @@
 {
-  "checkpoint": "core-v37/native-v48",
-  "parent_checkpoint": "core-v36/native-v48",
-  "game_source_commit": "b2122ef",
+  "checkpoint": "core-v38/native-v48",
+  "parent_checkpoint": "core-v37/native-v48",
+  "game_source_commit": "64fdb7dce509a00ed2e7d498243b1fb5135483d6",
+  "game_source_branch": "claude/sm-menu-portraits",
   "frontend_changed": true,
   "native_changed": false,
   "layers": [
     {
-      "name": "story",
-      "archive_sha256": "c2b6d3f6365475c9857244d36d32f4402702321f06856a6b3e4fec7bb0bf335b",
-      "archive_bytes": 25408430,
-      "files": 119
+      "name": "party",
+      "archive_sha256": "3d918770ad8e3b83ab07736e7508da3ea7cf300bedcb05e56d57a0b9118c5747",
+      "archive_bytes": 12228980,
+      "files": 54
     }
   ],
   "changed_paths": [
     "index.html",
     "combat/index.html"
   ],
-  "new_paths": 117,
+  "new_paths": 52,
   "source_build_is_release_acceptance": false,
   "whole_game_complete": false
 }

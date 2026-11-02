@@ -1,5 +1,5 @@
-# Super Model preview — core v37 / native v48
+# Super Model preview — core v38 / native v48
 
-Story layer on the accepted v36 image. The visual novel was revised so every route has a clear opening, middle and ending and each line follows from the last: Act 1 setup, per-woman nights and their fallout, the ledger and boundary scenes, the relay, the finale offers and unique ending titles. 111 re-recorded voice lines are served from `assets/voice/windows-v6/`; older voice directories stay for clients opened before the switch. Native combat build unchanged (v48).
+Party layer on the accepted v37 image: cleaner title screen, upcoming speakers' art preloaded, the story's clarity revision with 37 re-recorded lines (`assets/voice/mac-v7/`, accepted v2 casting, ASR-reviewed, not yet heard by a human), and the new party battle at `/party/` (three women, turn order, slot rolls, Focus; phones play it in landscape). New campaign fights open there; duels saved earlier still finish on `/combat/`. Native combat build unchanged (v48); party moves borrow the existing stage cues until each woman has her own clips.
 
 Source/image build is separate from release acceptance. No GitHub Actions or auto deploy.
