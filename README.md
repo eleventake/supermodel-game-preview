@@ -1,6 +1,6 @@
-# Super Model preview — core v40 / native v50
+# Super Model preview, core v41 / native v50
 
-Party layer on the accepted v37 image: cleaner title screen, upcoming speakers' art preloaded, the story's clarity revision with 37 re-recorded lines (`assets/voice/mac-v7/`, accepted v2 casting, ASR-reviewed, not yet heard by a human), and the new party battle at `/party/` (three women, turn order, slot rolls, Focus; phones play it in landscape). New campaign fights open there; duels saved earlier still finish on `/combat/`. Native v49 stages up to three copies (a back line), plays the acting copy, hides copies that are down, lands each woman's damage move on the chosen copy and sends heals and shields to the receiving woman. Duel cues play exactly as in v48.
+Text layer on the accepted v40 image. Semicolons and ellipses are gone from everything the player reads (story, character cards, UI and loading messages), each replaced by a full stop, a comma or a small rewrite. No spoken word changed, so every recording stays. Dialogue pages follow the new sentence plan with boundaries from the measured word timing of each recording. Native combat build unchanged (v50). The release header, left at core-v37 since v38, now names this release.
 
 Source/image build is separate from release acceptance. No GitHub Actions or auto deploy.
 

@@ -1,16 +1,23 @@
 {
-  "checkpoint": "core-v40/native-v50",
-  "parent_checkpoint": "core-v39/native-v49",
-  "game_source_commit": "9baaf42, branch claude/sm-menu-portraits",
-  "frontend_changed": false,
-  "native_changed": true,
+  "checkpoint": "core-v41/native-v50",
+  "parent_checkpoint": "core-v40/native-v50",
+  "game_source_commit": "c80b0f0",
+  "frontend_changed": true,
+  "native_changed": false,
   "layers": [
     {
-      "name": "native-v50",
-      "archive_sha256": "0df2c678f79ec6e350afe3a8f13a767012b9884333c66ddc19698835137ae510",
+      "name": "text",
+      "archive_sha256": "e4229c95cb0d9034458d8411e6e52899232cec2a7c036f8141304ab3eae8c027",
+      "archive_bytes": 533814,
       "files": 13
     }
   ],
+  "changed_paths": [
+    "index.html",
+    "combat/index.html",
+    "party/index.html"
+  ],
+  "new_paths": 10,
   "source_build_is_release_acceptance": false,
   "whole_game_complete": false
 }
