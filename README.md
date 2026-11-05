@@ -1,6 +1,10 @@
-# Super Model preview, core v41 / native v50
+# Super Model preview, core v42 / native v56
 
-Text layer on the accepted v40 image. Semicolons and ellipses are gone from everything the player reads (story, character cards, UI and loading messages), each replaced by a full stop, a comma or a small rewrite. No spoken word changed, so every recording stays. Dialogue pages follow the new sentence plan with boundaries from the measured word timing of each recording. Native combat build unchanged (v50). The release header, left at core-v37 since v38, now names this release.
+Party battle as Arcana cards on the accepted v41 image. Native v56 stages Sami and the picked
+pair as two lines facing the copies, melee walks in to its target and back, a raised camera
+covers both lines, floor rings mark who acts and the target, and a struck ally recoils. The
+party page turns the HUD into a hand of portrait and ability cards with a coin roll, and the
+copies' plates over their heads are the targets. Two layers: native (13 files) and ui (6 files).
 
 Source/image build is separate from release acceptance. No GitHub Actions or auto deploy.
 

@@ -1,23 +1,27 @@
 {
-  "checkpoint": "core-v41/native-v50",
-  "parent_checkpoint": "core-v40/native-v50",
-  "game_source_commit": "c80b0f0",
+  "checkpoint": "core-v42/native-v56",
+  "parent_checkpoint": "core-v41/native-v50",
+  "game_source_commit": "5a967c7",
   "frontend_changed": true,
-  "native_changed": false,
+  "native_changed": true,
   "layers": [
     {
-      "name": "text",
-      "archive_sha256": "e4229c95cb0d9034458d8411e6e52899232cec2a7c036f8141304ab3eae8c027",
-      "archive_bytes": 533814,
+      "name": "native",
+      "archive_sha256": "c156b8fdd71e3e665624e8e9a8c803d6d86be9fdaeb827ea05db87dbe6fc03d8",
+      "archive_bytes": 187378225,
       "files": 13
+    },
+    {
+      "name": "ui",
+      "archive_sha256": "7ef6bee3aa4e0d15924c406f8529bba9d485da3375c3ee84a64551bef5040af4",
+      "archive_bytes": 54204,
+      "files": 6
     }
   ],
   "changed_paths": [
-    "index.html",
-    "combat/index.html",
+    "assets/combat/runtime.json",
     "party/index.html"
   ],
-  "new_paths": 10,
   "source_build_is_release_acceptance": false,
   "whole_game_complete": false
 }
