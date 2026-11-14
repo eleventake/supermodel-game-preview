@@ -1,21 +1,21 @@
 {
-  "checkpoint": "core-v42/native-v56",
-  "parent_checkpoint": "core-v41/native-v50",
-  "game_source_commit": "5a967c7",
+  "checkpoint": "core-v43/native-v57",
+  "parent_checkpoint": "core-v42/native-v56",
+  "game_source_commit": "829da99",
   "frontend_changed": true,
   "native_changed": true,
   "layers": [
     {
       "name": "native",
-      "archive_sha256": "c156b8fdd71e3e665624e8e9a8c803d6d86be9fdaeb827ea05db87dbe6fc03d8",
-      "archive_bytes": 187378225,
+      "archive_sha256": "3fca7930d5166d5af80e4ffb7579b42330429f16f02733a32c0cd7ae0109a3ee",
+      "archive_bytes": 187452766,
       "files": 13
     },
     {
       "name": "ui",
-      "archive_sha256": "7ef6bee3aa4e0d15924c406f8529bba9d485da3375c3ee84a64551bef5040af4",
-      "archive_bytes": 54204,
-      "files": 6
+      "archive_sha256": "8165888569598a60f9e99f03a6f1f070b837dcae140638a8cfafb9705db51e02",
+      "archive_bytes": 128454,
+      "files": 7
     }
   ],
   "changed_paths": [
